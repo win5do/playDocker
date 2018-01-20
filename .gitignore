@@ -1,3 +1,4 @@
 opt/data/mysql/*
 opt/log/nginx/*
+!opt/log/nginx/.gitkeep
 
