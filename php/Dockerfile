@@ -20,6 +20,7 @@ RUN docker-php-ext-install -j$(nproc) iconv mcrypt \
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
     	&& composer config -g repo.packagist composer https://packagist.phpcomposer.com \
-    	&& composer global require "laravel/installer" \
-	&& echo -e '\nexport PATH=$HOME/.composer/vendor/bin:$PATH' >> .profile
+    	&& composer global require "laravel/installer"
 
+
+ENV PATH /root/.composer/vendor/bin:$PATH
