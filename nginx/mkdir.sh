@@ -1,6 +1,6 @@
 #!/bin/bash
 p1='/opt'
-p2='/opt/www'
+p2='/opt/code'
 p3='/opt/log'
 p4='/opt/log/nginx'
 
@@ -12,5 +12,5 @@ do
     fi
 done
 
-exec `chown -R www-data:www-data /opt/www /opt/log`
+exec `chown -R www-data:www-data /opt/code /opt/log`
 
